@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Техподдержка</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20221123201402">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header data-scroll="80" data-scroll-show="500" class="header">
+			<div class="header__container">
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="#" class="menu__link">Техподдержка</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Новый конкурс</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">О площадке</a></li>
+						</ul>
+					</nav>
+				</div>
+				<a href="" class="header__logo"><img src="img/logo.svg" alt="Logo"></a>
+				<div class="header__user-box">
+					<div class="header__user user-header">
+						<a href="" class="user-header__notifications">
+							<!--? количество уведомлений					 -->
+							<img src="img/header/bell.svg" alt="notifications">
+						</a>
+						<a href="" class="user-header__settings">
+							<img src="img/header/settings.svg" alt="settings">
+						</a>
+						<div class="user-header__avatar-ibg">
+							<picture><source srcset="img/header/user.webp" type="image/webp"><img src="img/header/user.jpg" alt="Александр"></picture>
+						</div>
+						<div class="user-header__name">
+							<div class="user-header__name">Александр</div>
+							<div class="user-header__nickname">@nickname</div>
+						</div>
+					</div>
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+				</div>
+				<!-- <button type="button" class="menu__icon icon-menu"><span></span></button>	 -->
+			</div>
+		</header>
+		<main class="page">
+			<div class="support">
+				<div class="support__container">
+					<div class="support__box">
+						<div class="support__body body-tabs">
+							<div class="support__content">
+								<div class="support__title title">Задать вопрос</div>
+								<div class="support__text text">
+									Чтобы мы могли вам помочь, опишите свой вопрос максимально подробно
+								</div>
+							</div>
+							<form action="#" id="question" class="support__input question">
+								<div class="question__info">
+									<!-- Почта -->
+									<div class="question__item item">
+										<input class="question__input input" data-error="Введен не верный E-mail" data-validate data-required="email" type="text" placeholder="example@domain.com" name="form[useremail]">
+										<span class="question__aicon acion">
+											<div class="_icon-email question__icon form__icon_user icon">
+											</div>
+										</span>
+									</div>
+									<!-- Имя -->
+									<div class="question__item item">
+										<input data-validate class="question__input input" data-error="Введите имя" data-required="username" type="text" placeholder="Имя" name=form[username]>
+										<span class="question__aicon acion">
+											<div class="_icon-user question__icon form__icon_user icon">
+											</div>
+										</span>
+									</div>
+
+									<!-- Тип обращения -->
+									<!-- <div class="form__item item text item_average">
+										<label for="mappeal" class="text__label">Тип обращения*:</label>
+										<div class="text__icon text__icon_arrow">
+											<input id="Appeal" type="text" name="appeal" placeholder="Тип обращения"
+												class="text__input input">
+										</div>
+									</div> -->
+
+									<!-- Вопрос -->
+									<div class="question__area area">
+										<textarea id="question" type="area" name=form[question] data-validate data-error="Задайте вопрос" data-required="userquestion" class="question__textarea textarea" data-autoheight placeholder="Объясните ваш вопрос"></textarea>
+										<span class="question__aicon acion">
+											<div class="_icon-question question__icon icon">
+											</div>
+										</span>
+									</div>
+								</div>
+
+								<div class="question__checkbox checkbox">
+									<input id="cq_1" data-error="Подтвердите согласие" data-validate data-required="checkbox" class="checkbox__input" type="checkbox" value="1" name="form[checkbox]">
+									<label for="cq_1" class="checkbox__label"><span class="checkbox__text">Я
+											согласен с политикой обработки данных и политикой использования
+											сервиса.</span></label>
+								</div>
+
+								<button type="submit" class="question__button button button_color button_big">Отправить</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__copyright">Copyright © 2022 inkvision. Make with ❤️</div>
+				<div class="footer__button">
+					<div class="footer__text">Наверх</div>
+					<a href="#" class="footer__btn">
+						<img src="img/settings-icons/arrow-up.svg" alt="arrow-up">
+					</a>
+				</div>
+			</div>
+		</footer>
+
+		<!--? надо подключить кнопку "наверх" для перехода на главную страницу -->
+	</div>
+	<!-- <div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+				Text
+			</div>
+		</div>
+	</div>
+</div> -->
+	<script src="js/app.min.js?_v=20221123201402"></script>
+</body>
+
+</html>
